@@ -8,20 +8,19 @@
   <packaging>jar</packaging>
 
   <name>example</name>
-  <url>http://maven.apache.org</url>
-  <repositories>
-    <repository>
-      <id>github</id>
-      <url>https://maven.pkg.github.com/mohammadrezaeicode/excel</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
-
+  <url>https://github.com/mohammadrezaeicode/mr-excel-example-gallery</url>
+<!--  <repositories>-->
+<!--    <repository>-->
+<!--      <id>github</id>-->
+<!--      <url>https://maven.pkg.github.com/mohammadrezaeicode/excel</url>-->
+<!--      <releases>-->
+<!--        <enabled>true</enabled>-->
+<!--      </releases>-->
+<!--      <snapshots>-->
+<!--        <enabled>true</enabled>-->
+<!--      </snapshots>-->
+<!--    </repository>-->
+<!--  </repositories>-->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>12</maven.compiler.source>
@@ -29,9 +28,20 @@
   </properties>
   <dependencies>
     <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-imaging</artifactId>
+      <version>1.0-alpha2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.36</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>io.github.mohammadrezaeicode</groupId>
       <artifactId>excel</artifactId>
-      <version>0.1-SNAPSHOT</version>
+      <version>1.0.1</version>
     </dependency>
   </dependencies>
 </project>
